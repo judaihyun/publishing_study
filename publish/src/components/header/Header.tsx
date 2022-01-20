@@ -6,14 +6,22 @@ import Image from '../common/Image';
 
 const Header = styled.header`
     border: 1px solid black;
-    /* height: 90px; */
+    min-width: 700px;
 `;
 
 const Menu = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 80px; */
+`;
+
+const SnsBox = styled.div`
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+    @media ${ ({theme}) => theme.device.laptop} {
+        display: none;
+    }
 `;
 
 
@@ -28,9 +36,11 @@ export default () => {
             <Image src={HeaderTopic}/>
             <Image src={HeaderGoods}/>
             <SearchBox/>
+            <SnsBox>
             <Image src={HeaderFb} size={30}/>
             <Image src={HeaderInsta} size={30}/>
             <Image src={HeaderJnto} size={30}/>
+            </SnsBox>
             </Menu>
         </Header>
     )
