@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 type IProps = {
-    src?: string;
+    src: string;
     size?: number;
 }
 
@@ -11,6 +11,8 @@ type IProps = {
 const ImageBox = styled.img`
     height: ${(props: IProps) => props.size || '100%'};
     width: ${(props: IProps) => props.size || '100%'};
+    background-repeat: no-repeat;
+    object-fit: cover;
 `;
 
 

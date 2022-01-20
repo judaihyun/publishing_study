@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import Main from 'views/Main/Main';
 import Header from './components/header/Header';
 import theme from './style/theme';
 
@@ -13,7 +14,7 @@ function App(): JSX.Element {
     <ThemeProvider theme={theme}>
       <Container>
         <Header/>
-        Learn React!
+        <Main/>
       </Container>
     </ThemeProvider>
   );

@@ -10,5 +10,13 @@ import HeaderInsta from './header/header_insta.png';
 import HeaderJnto from './header/header_jnto.png';
 import HeaderBbb from './header/icon_bbb.png';
 
+import MainBanner1 from './body/main_banner_01.jpg';
+import MainBanner2 from './body/main_banner_02.jpg';
+import MainBanner3 from './body/main_banner_03.jpg';
+
+import ContentTitle from './body/now_japan.jpg';
+
 export { Mlogo, HeaderTitle, HeaderLoc, HeaderGoods, HeaderTopic, HeaderTheme,
-BtnSearch, HeaderFb, HeaderInsta, HeaderJnto, HeaderBbb };
+BtnSearch, HeaderFb, HeaderInsta, HeaderJnto, HeaderBbb,
+MainBanner1, MainBanner2, MainBanner3, ContentTitle
+};
