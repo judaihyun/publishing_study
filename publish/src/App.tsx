@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import Header from './components/header/Header';
+import theme from './style/theme';
 
 const Container = styled.div`
   display:flex;
@@ -9,10 +10,12 @@ const Container = styled.div`
 
 function App(): JSX.Element {
   return (
-    <Container>
-      <Header/>
-      Learn React!
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Header/>
+        Learn React!
+      </Container>
+    </ThemeProvider>
   );
 }
 
