@@ -25,7 +25,7 @@ views - Can also be called "pages", the majority of the app would be contained h
 
 - TODO
 1. 프론트엔드 기능 추가(검색, 페이징 등)
-2. 코드 리펙토링( 반응형 구조화 )
+2. 코드 리펙토링( 반응형 구조화, 공통 컴포넌트 )
 3. mediaquery 적용이 잘 안되는 문제
 
 
