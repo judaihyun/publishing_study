@@ -1,12 +1,14 @@
+import Footer from 'components/Footer';
+import Header from 'components/Header/Header';
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Main from 'views/Main/Main';
-import Header from './components/header/Header';
 import theme from './style/theme';
 
 const Container = styled.div`
   display:flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 function App(): JSX.Element {
@@ -15,6 +17,7 @@ function App(): JSX.Element {
       <Container>
         <Header/>
         <Main/>
+        <Footer/>
       </Container>
     </ThemeProvider>
   );

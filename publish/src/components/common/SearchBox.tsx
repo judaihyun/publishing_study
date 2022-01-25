@@ -1,17 +1,16 @@
 import { BtnSearch } from 'assets/image/Image';
 import React from 'react';
 import styled from 'styled-components';
-import Image from './Image';
 
 
 const Search = styled.div`
     display: flex;
     @media ${ ({theme}) => theme.device.wide} {
-        width: 20%;
-        margin-left: 10%;
+        width: 40%;
+        padding-left: 8%;
     };
     @media ${ ({theme}) => theme.device.desktop} {
-        width: 20%;
+        width: 30%;
         margin-left: 5%;
     }
     @media ${ ({theme}) => theme.device.laptop} {
@@ -33,7 +32,6 @@ const SearchBox = () => {
     return (
         <Search>
             <StyledInput/>
-            {/* <Image src={BtnSearch}/> */}
         </Search>
     )
 }
