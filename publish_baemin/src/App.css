@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@charset "utf-8";
+
+@font-face{
+    font-family: "custom-icons";
+    src: url('./fonts/custom-icons.woff2') format("woff2"),
+    url('./fonts/custom-icons.woff2') format("woff");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+	font-family: 'Web Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/NotoSansKR-Regular.woff2') format('woff2'),
+		url('./fonts/NotoSansKR-Regular.woff2') format('woff'),
+}
+@font-face {
+	font-family: 'Web Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: url('./fonts/NotoSansKR-Medium.woff2') format('woff2'),
+		url('./fonts/NotoSansKR-Medium.woff2') format('woff'),
+}
+@font-face {
+	font-family: 'Web Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./fonts/NotoSansKR-Bold.woff2') format('woff2'),
+    	url('./fonts/NotoSansKR-Bold.woff2') format("woff");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*
+@font-face {
+	font-family: 'Web Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(../images/font/noto/NotoSansKR-Thin.woff2) format('woff2'),
+		url(../images/font/noto/NotoSansKR-Thin.woff) format('woff'),
+		url(../images/font/noto/NotoSansKR-Thin.ttf) format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+	font-family: 'Web Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: url(../images/font/noto/NotoSansKR-Light.woff2) format('woff2'),
+		url(../images/font/noto/NotoSansKR-Light.woff) format('woff'),
+		url(../images/font/noto/NotoSansKR-Light.ttf) format('truetype');
 }
+@font-face {
+	font-family: 'Web Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: url(../images/font/noto/NotoSansKR-Black.woff2) format('woff2'),
+		url(../images/font/noto/NotoSansKR-Black.woff) format('woff'),
+		url(../images/font/noto/NotoSansKR-Black.ttf) format('truetype');
+}
+*/
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
