@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
         letter-spacing: -0.4px;
         color: rgb(33,35,41);
         min-width: 320px;
-        font-family: '"Web Noto Sans KR", sans-serif, 돋움, Dotum, helvetica';
+        font-family: 'Web Noto Sans KR', sans-serif, 돋움, Dotum, helvetica;
         font-weight: 400;
         -webkit-font-smoothing: antialiased;
     }
@@ -25,6 +25,9 @@ const GlobalStyles = createGlobalStyle`
     }
     body{
         background-color:#ffffff;
+    }
+    h4{
+        font-weight: normal;
     }
 
 `;

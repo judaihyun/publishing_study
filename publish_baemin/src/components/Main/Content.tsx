@@ -1,25 +1,32 @@
-import Main_header from 'components/Header/Main_header';
+import MenuBarContainer from 'components/Header/MenuBar/MenuBarContainer';
 import React from 'react';
 import styled from 'styled-components';
+import CeoSection from './CeoService/CeoSection';
+import LeftContent from './LeftContent/LeftContent';
 
 
 
 const Container = styled.div`
-    height: 100vh;
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 `;
 
 const ContentContainer = styled.div`
-    border: 1px solid blue;
+    padding: 24px 16px 80px; // responsive max-width 879px
 `;
 
 
 export default () => {
     return (
     <Container>
-    <Main_header/>
+    <MenuBarContainer/>
         <ContentContainer>
-        main
+        <div style={{height:'70px', border: '1px blue solid'}}>
+        slider
+        </div>
+        <CeoSection/>
+        <LeftContent/>
         </ContentContainer>
     </Container>
     )

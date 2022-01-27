@@ -1,10 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+
+type TProps = {
+    active: boolean
+}
 
 const Header = styled.div`
     height: 65px; // responsive
-    border: 1px solid red;
-    `;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid white;
+    ${(props:TProps) => props.active && css`
+        border-bottom: 1px solid rgb(236, 238, 242);
+    `}
+`;
 
 const WrappedMenu = styled.div`
     display: flex;
@@ -12,7 +24,6 @@ const WrappedMenu = styled.div`
     justify-content: space-between;
     height: 100%;
 `;
-
 
 const HambugIcon = styled.i`
     &:before{
@@ -22,7 +33,6 @@ const HambugIcon = styled.i`
         font-family: custom-icons !important;
     }
 `;
-
 
 const LogoBox = styled.div`
     flex-grow: 1;
@@ -38,10 +48,12 @@ const BaeminLogo = styled.img.attrs(({
     
 `;
 
-export default () => {
 
+
+export default (props:TProps) => {
+    
     return (
-        <Header>
+        <Header {...props}>
             <WrappedMenu>
                 <HambugIcon/>
                 <LogoBox>

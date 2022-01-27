@@ -23,7 +23,7 @@ const Link = styled.a`
 const H4 = styled.h4`
     font-size: 14px;
     line-height: 20px;
-    font-weight: 400;
+    /* font-weight: 400; */
     & > strong {
         font-weight: bolder !important;
     }
