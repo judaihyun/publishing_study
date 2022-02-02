@@ -8,6 +8,7 @@ type TProps = {
 
 const Header = styled.div`
     height: 65px; // responsive
+    z-index: 999;
     position: sticky;
     top: 0;
     width: 100%;

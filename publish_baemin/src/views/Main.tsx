@@ -1,3 +1,4 @@
+import Footer from 'components/Footer/Footer';
 import BaeminOne from 'components/Header/BaeminOne';
 import Content from 'components/Main/Content';
 import React from 'react';
@@ -14,6 +15,7 @@ export default () => {
         <Container>
             <BaeminOne/>
             <Content/>
+            <Footer/>
         </Container>
     )
 }

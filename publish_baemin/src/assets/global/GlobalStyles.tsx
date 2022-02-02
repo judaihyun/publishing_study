@@ -25,9 +25,17 @@ const GlobalStyles = createGlobalStyle`
     }
     body{
         background-color:#ffffff;
+        /* background-color: #fffcea; */
     }
     h4{
         font-weight: normal;
+    }
+    button{
+        border:none;
+        outline: 0px;
+        background: none;
+        cursor:pointer;
+        color:inherit;
     }
 
 `;

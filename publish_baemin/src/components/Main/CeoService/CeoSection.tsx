@@ -1,3 +1,4 @@
+import SmallSlider from 'components/common/SmallSlider';
 import React from 'react';
 import styled from 'styled-components';
 import CeoServiceMenu from './CeoServiceMenu';
@@ -46,13 +47,7 @@ const Tooltip = styled.div`
     }
 `;
 
-const Slider = styled.div`
-    width: 16px;
-    height: 16px;
-    background-color: yellow;
-    margin: 1px 0px 0px 4px;
 
-`;
 
 const AdvertisingSection = styled.div`
     display: flex;
@@ -60,6 +55,31 @@ const AdvertisingSection = styled.div`
     border: 1px solid rgb(236, 238, 242);
     margin: 24px 0px 0px;
     padding: 24px 16px;
+    button{
+        color: white;
+        height: 48px;
+        font-size:16px;
+        line-height: 24px;
+        letter-spacing: -0.4px;
+        border-radius: 4px;
+        font-weight: bold;
+        padding: 11px 24px 13px;
+        background-color: rgb(26, 124, 255);
+        margin-top: 12px;
+    }
+`;
+
+const AdvertisTitle = styled.div`
+    display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: space-between;
+    & > h5{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
 `;
 
 export default () => { //with login page
@@ -70,12 +90,15 @@ export default () => { //with login page
                 <CeoServiceMenu/>
                 <Tooltip>
                     <span>외식업 사장님을 위한&nbsp;</span><strong> 온라인 식자재 전문몰</strong>
-                    <Slider/>
+                    <SmallSlider/>
                 </Tooltip>
             </CeoSection>
             <AdvertisingSection>
-                <div>우리 가게에 맞는 <br/>광고를 시작하세요.</div>
-                <div>배민 광고 시작하기</div>
+                <AdvertisTitle>
+                    <h5>우리 가게에 맞는 <br/>광고를 시작하세요.</h5>
+                    <img width={'56px'} height={'56px'} src='https://ceo-cdn.baemin.com/cdn/ceo-square/src/images/speaker.png?ver=bc114afdfa2676592e71621690c7b239'/>
+                </AdvertisTitle>
+                <button>배민 광고 시작하기</button>
             </AdvertisingSection>
         </Container>
     )

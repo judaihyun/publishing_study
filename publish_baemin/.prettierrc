@@ -14,5 +14,11 @@
   "tabWidth": 4,
   "trailingComma": "none",
   "useTabs": false,
-  "vueIndentScriptAndStyle": false
+  "vueIndentScriptAndStyle": false,
+  "react/jsx-filename-extension": [
+    1,
+    {
+      "extensions": [".jsx", ".tsx"]
+    }
+  ]
 }

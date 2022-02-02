@@ -9,6 +9,7 @@ const Button = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border:1px solid rgb(215, 219, 230);
     height: 48px;
     border-radius: 4px;
@@ -26,13 +27,28 @@ const MoreIcon = styled.i`
     }
 `;
 
+const Span = styled.span`
+    font-weight: bolder;
+`;
+
 type ButtonProps = {
     mt: number; 
     text: string;
+    front?: string;
+    space?: boolean;
 }
 
 
-export default ({mt, text}:ButtonProps) => {
+export default ({mt, text, front, space}:ButtonProps) => {
+    if(front){
+        return (
+            <Button mt={mt}>
+                <Span>{front}</Span>
+                {text}
+                <MoreIcon/>
+            </Button>
+        )
+    }
     return (
         <Button mt={mt}>
            {text} 
