@@ -108,8 +108,8 @@ export default () => {
     <>
     <MyShopTitle>새해맞이! SNS로 내 가게 홍보하기</MyShopTitle>
     <MediaContainer>
-        {Data && Data.map(item => (
-        <Media>
+        {Data && Data.map((item,idx) => (
+        <Media key={idx}>
             <img src={item.src}/>
             <Tag>{item.tag}</Tag>
             <h4>{item.summary}</h4>

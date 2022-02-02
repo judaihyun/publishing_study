@@ -17,4 +17,9 @@ declare module 'publish' {
         area: string;
         isCamp?: boolean;
     }
+    
+    type Tdata = {
+        label: string;
+        src: string;
+    }
 }
